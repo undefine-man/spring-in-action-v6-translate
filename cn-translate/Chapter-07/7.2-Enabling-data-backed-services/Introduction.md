@@ -87,10 +87,10 @@ $ curl http://localhost:8080/ingredients/FLTO
 spring:
   data:
     rest:
-      base-path: /api
+      base-path: /data-api
 ```
 
-这将设置 Spring Data REST 端点的基本路径为 `/api`。因此，Ingredient 端点现在是 `/api/ingredients`。现在，通过请求一个 tacos 列表来使用这个新的基本路径：
+这将设置 Spring Data REST 端点的基本路径为 `/data-api`。因此，Ingredient 端点现在是 `/data-api/ingredients`。现在，通过请求一个 tacos 列表来使用这个新的基本路径：
 
 ```bash
 $ curl http://localhost:8080/data-api/tacos
